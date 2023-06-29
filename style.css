@@ -1,0 +1,118 @@
+body{
+    margin: 0px;
+    background-image: url("/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Gamja Flower', cursive;
+}
+.container{
+    height: 100vh;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#under-line{
+    background-color:pink;
+    height: 5px;
+    position: absolute;
+    width:50px;
+    top:50px;
+    padding: 0px;
+    transition: 0.5s;
+}
+#Date{
+    padding: 20px;
+    margin-bottom: 30px;
+}
+#gird{
+    display: grid;
+    grid-template-columns: 30% 65% 5%;
+    align-items: center;
+    border: 1px solid black;
+    position: relative;
+}
+.tab-list span{
+    font: bold black;
+    cursor: pointer;
+    padding: 1em;
+}
+#task-input{
+    border-style: none;
+    width: 100%;
+    padding:1em;
+}
+#task-input:hover{
+    background-color: pink;
+    transition: 0.7s;
+}
+#add-button{
+    height: 100%;
+    padding: 0px;
+    background-color: plum;
+}
+.task-done{
+    text-decoration: line-through;
+    background-color: lightgrey;
+    width: 100%;
+}
+.task{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+}
+.task span{
+    padding:1em;
+    width: 100%;
+}
+#button-box{
+    display: flex;
+}
+.chcek-box{
+	border:none;
+    background-color: transparent;
+    color: rgb(37, 232, 37);
+    padding: 1em;
+}
+.delete-box{
+    border:none;
+    background-color: transparent;
+    color: rgb(255, 3, 3);
+    padding: 1em;
+}
+.reword-box{
+	border:none;
+    background-color: transparent;
+    color: black;
+    padding: 1em;
+}
+.chcek-box:hover, .delete-box:hover, .reword-box:hover {
+    background-color: pink;
+    transition: 0.7s;
+}
+#task-board{
+    height: 448px;
+    overflow: auto;
+}
+
+@media screen and (max-width:768px){ 
+   .tab-list{
+        grid-column-start:1;
+        grid-column-end:4;
+    }
+    #input{
+        grid-column-start:1;
+        grid-column-end:3;
+    }
+    #add-button{
+        grid-column-start:3;
+        grid-column-end:4;
+    }
+    #task-board{
+        height: 336px;
+        overflow: auto;
+    }
+}
