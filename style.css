@@ -130,13 +130,13 @@ body{
     }
 }
 /*모바일 가로 모드일때*/
-@media screen and (min-width: 320px) and (max-width: 740px) and (orientation: landscape){
+@media screen and (min-width: 320px) and (max-width: 896px) and (orientation: landscape){
     #Date{
         padding: 0px;
         margin-bottom: 20px;
     }
     #task-board{
-        height: 150px;
+        height: 220px;
         overflow: auto;
     }
 }
