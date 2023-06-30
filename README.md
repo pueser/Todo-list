@@ -1,5 +1,4 @@
-![Todo-list사진_1](https://github.com/pueser/Todo-list/assets/117990884/2b5c13c7-e8d4-4aeb-b167-7e3eb576500f)
-![todo_list사진_2](https://github.com/pueser/Todo-list/assets/117990884/4acf1a7c-1d74-4b74-b03a-03e7ccb5439f)
+![todolist사진](https://github.com/pueser/Todo-list/assets/117990884/98b2a743-d8a0-4e95-adf9-bf00a0e16725)
 
 <기능구현><br/>
 1.유저가 값을 입력한다.<br/>
