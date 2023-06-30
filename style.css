@@ -1,12 +1,15 @@
 body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0px;
     background-image: url("/images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Gamja Flower', cursive;
 }
-.container{
-    height: 100vh;
+.container{   
     border-radius: 20px;
     padding: 15px;
     background-color: white;
@@ -14,7 +17,7 @@ body{
 }
 #under-line{
     background-color:pink;
-    height: 5px;
+    height: 6px;
     position: absolute;
     width:50px;
     top:50px;
@@ -45,6 +48,7 @@ body{
 #task-input:hover{
     background-color: pink;
     transition: 0.7s;
+    border-style: none;
 }
 #add-button{
     height: 100%;
@@ -112,7 +116,27 @@ body{
         grid-column-end:4;
     }
     #task-board{
-        height: 336px;
+        height: 400px;
+        overflow: auto;
+    }
+    #under-line{
+        background-color:pink;
+        height: 3.5px;
+        position: absolute;
+        width:50px;
+        top:20px;
+        padding: 0px;
+        transition: 0.5s;
+    }
+}
+/*모바일 가로 모드일때*/
+@media screen and (min-width: 360px) and (max-width: 740px) and (orientation: landscape){
+    #Date{
+        padding: 0px;
+        margin-bottom: 20px;
+    }
+    #task-board{
+        height: 150px;
         overflow: auto;
     }
 }
